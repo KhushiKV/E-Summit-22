@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Startup Expo</title>
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/f6.jpg" type="image/x-icon">
+    <link rel="icon" href="images/f6.jpg" type="image/x-icon">
+
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/sourcesanspro-font.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+<!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<style>
+.maihead{
+font-family: 'Varela Round';
+font-size: 80px;
+font-weight: 500;
+line-height: 1.2;
+max-width: 100%;
+padding: 20px 0px 5px;
+color: #ffffff;
+}
+.maihead6{
+font-size: 20px;
+font-family: 'Varela Round';
+line-height: 1.2;
+max-width: 100%;
+text-align: center;
+
+}
+.maihead2{
+font-size: 20px;
+font-family: 'Varela Round';
+line-height: 1.2;
+padding-bottom: 10px;
+
+
+}
+.maihead3{
+font-size: 80px;
+line-height: 1.0;
+
+font-family:'Annie Use Your Telescope';
+padding-bottom: 100px;
+
+}
+.maihead4{
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+line-height: 1.2;
+text-align: center;
+
+}
+.maihead7{
+font-size: 15px;
+font-family: 'Roboto', sans-serif;
+line-height: 0.9;
+text-align: center;
+
+}
+.maihead5{
+font-size: 30px;
+font-family: 'Raleway', sans-serif;
+line-height: 1.2;
+text-align: center;
+color: purple;
+}
+ul.b {
+  list-style-type: "square";
+}
+.testg {
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  text-align: left;
+  align-self: center;
+}
+
+        body {
+        font-family: "Mandali", sans-serif;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+        }
+
+        p {
+        font-size: 16px;
+        font-weight: 500;
+        }
+
+        strong {
+        font-weight: 600;
+        }
+
+        h3 {
+        font-size: 24px;
+        letter-spacing: -0.25px;
+        font-weight: 900;
+        }
+
+        h4 {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 140%;
+        }
+
+        .tile {
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        }
+
+        .tile .title {
+        color: #fff;
+        margin-top: 0px;
+        }
+
+        .tile.purple,
+        .tile.blue,
+        .tile.red,
+        .tile.orange,
+        .tile.green,
+        .tile.primary {
+        color: #fff;
+        }
+
+        .tile.purple {
+        background: #5133ab;
+        }
+
+        .tile.purple:hover {
+        background: #3e2784;
+        }
+
+        .tile.red {
+        background: #ac193d;
+        }
+
+        .tile.red:hover {
+        background: #7f132d;
+        }
+
+        .tile.green {
+        background: #00a600;
+        }
+
+        .tile.green:hover {
+        background: #007300;
+        }
+
+        .tile.blue {
+        background: #2672ec;
+        }
+
+        .tile.blue:hover {
+        background: #125acd;
+        }
+
+        .tile.orange {
+        background: #dc572e;
+        }
+
+        .tile.orange:hover {
+        background: #b8431f;
+        }
+
+        .tile.primary {
+        background: #004a8c;
+        border-radius: 4px;
+        font-family: 'Mandali', sans-serif;
+        }
+
+        .tile.primary:hover {
+        background: #00305a;
+        }
+
+        body {
+  padding-top: 0px;
+}
+.teasing {
+margin-bottom: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .teasing .row {
+    display: flex;
+  }
+
+  .teasing .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.card {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  position:relative;
+  height: 150px;
+}
+.card::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(to top, rgba(0,0,0,.90), transparent 85%);
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+
+/*
+.card:hover::before {
+  background-image:linear-gradient(to top, rgba(0,0,0,.90), rgba(0,0,0,.60));
+}
+*/
+
+.coming-soon {
+  position: absolute;
+  z-index: 1;
+  top:50%;
+  left:0;
+  right:0;
+  margin-top: -17px;
+}
+
+.coming-soon span {
+  font-size: 20px;
+  line-height: 2em;
+  background: rgba(255, 255, 255, .8);
+ padding:10px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.disabled  {
+    filter: grayscale(90%);
+}
+
+.card-content {
+  position: relative;
+  overflow: hidden;
+  margin-top: none;
+  padding: 0 .5em;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.disabled .card-content {
+  opacity: .9;
+}
+
+.card-title {
+  margin: 1.5em 0 1em 0;
+  font-weight: 800;
+}
+
+.lorem {background-image: url(crazy_ideas/images/incubation.jpeg);}
+.dolor {background-image: url(crazy_ideas/images/interact.jpg);}
+.sit-amet {background-image: url(crazy_ideas/images/hire.jpg);}
+.blablabla {background-image: url(crazy_ideas/images/exposure.jpg);}
+
+/* @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.containerF {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+h3.F {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
+
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+} */
+.spec{
+  line-height: 1.1px;
+}
+</style>
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!--Start Preloader -->
+        <div class="preloader"></div>
+        <!--End Preloader -->
+        <!-- Main Header-->
+        <header class="main-header" >
+
+
+
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container">
+                    <div class="clearfix">
+
+                        <div class="float-left logo-box">
+                            <div class="logo"><a href="index.html"><img src="images/E-summit.png" alt="LOGO" height="103" width="304" title=""></a></div>
+                        </div>
+
+                        <div class="nav-outer clearfix">
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="current dropdown">
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#Perks">Perks</a>
+
+                                        </li>
+
+
+
+                                        <li class="dropdown">
+                                            <a href="#ForYou">Info</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#Registration">Procedure</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#Sectors">Sectors</a>
+
+                                        </li>
+
+
+                                        <li class="dropdown">
+                                            <a href="#Sponsors">Sponsors</a>
+
+                                        </li>
+
+                                        <li><a href="#Contact">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+
+                            <!--Button Box http://bit.ly/2ExpJel  -->
+                            <div class="button-box">
+                                <a href="/" onclick="return false;" class="theme-btn btn-style-one"><small>APPLY (Opening Soon!)</small></a>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+
+
+        </header>
+        <!--End Main Header -->
+        <!-- Page Title-->
+        <section class="page-title" style="background: url(crazy_ideas/images/e3.jpg);">
+            <div class="container">
+                <div class="title-text text-center">
+                    <div class = "maihead">Startup Expo</div>
+
+                </div>
+            </div>
+
+        </section>
+        <br> <br>
+        <!-- End Page Title-->
+
+        <section class="schedule-section one" id="About">
+            <div class="container" id="about">
+
+
+                <div class="schedule-content clearfix">
+                  <div class="sec-title">
+
+                      <h2>About</h2>
+                  </div></br><div class="about-text">
+                        <h6>
+
+                            <p>
+                              Startup Expo is a three day startup
+                                showcase fest during the E-Summit
+                                IIT Indore. It is ideal for startups and
+                                companies wanting to market their
+                                product and/or grabbing the
+                                attention of investors or strategic
+                                partners. It is a platform for
+                                innovative startups to showcase
+                                their product and services and to
+                                get in touch with thousands of
+                                potential customers and investors.
+                                Startups from various sectors /
+                                industries are welcome to
+                                participate.
+                            </p></div></div></section><br><br><br>
+
+                            <section class="schedule-section one" id="Perks">
+                                <div class="container" id="events3">
+
+
+                                        <div class="schedule-content clearfix">
+                                          <div class="sec-title">
+
+                                              <h2>Perks</h2>
+                                          </div></br><br>
+
+                                                              <div class="container teasing">
+                                          <div class="row">
+                                            <div class="col-md-3">
+                                              <div class="card lorem">
+                                                <div class="card-header"></div>
+                                                <div class="card-content">
+                                                  <h3 class="card-title"></h3>
+                                                  <p>
+                                                    INCUBATION / ACCELERATION OPPORTUNITY
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                              <div class="card dolor disabled">
+                                                <div class="card-header">
+
+                                                </div>
+                                                <div class="card-content">
+                                                  <h3 class="card-title"></h3>
+                                                  <p>
+                                                    INTERACTION WITH INVESTORS, MENTORS
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                              <div class="card sit-amet disabled">
+                                                <div class="card-header">
+
+                                                </div>
+                                                <div class="card-content">
+                                                  <h3 class="card-title"></h3>
+                                                  <p>
+                                                   OPPORTUNITY TO HIRE INTERNS / FULL TIME WORKERS
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                              <div class="card blablabla disabled">
+                                                <div class="card-header">
+
+                                                </div>
+                                                <div class="card-content">
+                                                  <h3 class="card-title"></h3>
+                                                  <p>
+                                                   DIRECT EXPOSURE TO 1500+ IIT INDORE STUDENTS
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                        </div>
+
+                                        </div>
+                              </div>
+                            </section>
+
+
+      <br>
+        <section class="schedule-section one" id="ForYou">
+            <div class="container" id="events2">
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>What do you get?</h2>
+                      </div><br>
+                      <h6><b>●</b> 4 sqm stall space to showcase your startup/product.<br/><br>
+                      ● Three days full access to E-Summit & Startup Expo 2019.<br/><br>
+                      ● Easy visibility to global investors, potential partners and mentors
+                      (One-on-one interaction).<br/><br>
+                      ● Access to incubators/accelerators.<br/><br>
+                      ● Listing on startup expo booklet and E-Summit booklet.<br/><br>
+                      ● Logo with link to company's site on E-Summit website.<br/><br>
+                      ● Logo on Startup Expo banners and standees.<br/><br>
+                      ● Social Media posts mentioning Company's social media handles.<br/><br>
+                      ● Branding at different strategic locations during the summit.<br/></h6>
+                      <br><br><h3>Other facilities at the stall:</h3>
+                      <h6><br>
+                        ● 1 Table & 2 Chairs.<br/><br>
+                        ● Startup name and logo on the top side of kiosk.<br/><br>
+                        ● Electricity Board.<br/><br>
+                        ● You can place your creatives / standees in the booth
+                        </h6>
+                    </div>
+
+          </div>
+        </section><br>
+
+        <section class="schedule-section one" id="Registration">
+            <div class="container" id="events3">
+
+
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>Registration Procedure</h2>
+                      </div></br><div class = "spec"><h6>
+                     ● Last date to register: July 31, 2019<br/><br>
+                     ● After reviewing and selection process, selected startups will be
+                      notified through emails and calls.<br/><br>
+                    ● After selection, startups are
+                      required to send a confirmation mail to E-Summit IIT Indore at
+                      esummit@iiti.ac.in to confirm their participation.
+                      (Last date: 05/08/2019)<br/><br>
+                      ● A unique stall no. will be allotted to all the selected startups,
+                      along with a point of contact from E-Summit team.<br/><br>
+                      ● Startups must pay the fee (Fee: INR 10k only) to E-Summit IITI on or before 15th
+                      August 2019. The information will be conveyed through mail.<br/><br><br>
+                      NOTE: All the dates mentioned above are tentative and may
+                      change which will then be notified through emails and calls.</h6></div>
+                    </div>
+          </div>
+        </section><br>
+
+        <section class="schedule-section one" id="Sectors">
+            <div class="container" id="events1">
+
+                <div class="schedule-area">
+                    <div class="schedule-title">
+                       <h3></h3>
+                        </div>
+                    </div>
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>Focused sectors</h2>
+                      </div><br>
+
+
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Energy and Environment</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Agritech</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Healthcare</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Robotics and Automation</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                </div>
+                              <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Blockchains</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">AR / VR</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">IoT</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Artificial Intelligence</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Fintech</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Consumer Internet</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Travel and Hospitality</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Education</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Logistics & E-Commerce</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Enterprise Tech</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Drones</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                  <a href="/" onclick="return false;"><div class="tile primary">
+                                    <h3 class="title" align = "center">Consumer Goods</h3>
+                                    <p></p>
+                                    </div></a>
+                                </div>
+                              </div>
+
+                    </div>
+          </div>
+        </section><br>
+
+
+
+        <div class="button-box" align = "center"> <!-- http://bit.ly/2ExpJel -->
+            <a href="/" onclick="return false;" class="theme-btn btn-style-one">Apply for Startup Expo <br/> <small>opening soon!</small></a>
+        </div>
+
+      <!--  <div class="containerF">
+
+                <h2 class = "F">Frequently Asked Questions</h2>
+
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <a>Why is the moon sometimes out during the day?</a>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>Why is the sky blue?</a>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>Will we ever discover aliens?</a>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>How much does the Earth weigh?</a>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>How do airplanes stay up?</a>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>-->
+
+        <br/><br/><br/><br/><br/>
+
+
+
+
+
+
+        <!--End Sponcer Section-->
+
+        <!-- Main Footer-->
+        <footer class="main-footer" style="background: url(images/background/footer.jpg);">
+            <div class="container" id="Contact">
+                <div class="footer-area text-center">
+                    <div class="footer-logo">
+                        <figure>
+                            <a href="http://sesc.iiti.ac.in/"><img src="images/12.png" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="info-area">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-placeholder"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>IIT Indore <br>Simrol,Indore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>+91-8319602071<br>+91-9479554628</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-e-mail-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            <a href="mailto:esummit@iiti.ac.in">esummit@iiti.ac.in</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/sesciiti/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/sesciiti"><i class="fab fa-twitter"></i></a></li>
+
+                        <li><a href="https://www.linkedin.com/company/sesc-iiti/about/"><i class="fab fa-linkedin-in"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/sesc.iiti/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <!--End Main Footer-->
+        <!--Footer Bottom Section-->
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    Copyright &copy; <a href="#">ESummit 2019, IIT Indore</a> 2019. All Rights Reserved
+                </div>
+            </div>
+        </section>
+        <!--End Footer Bottom Section-->
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/appear.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/bxslider.js"></script>
+        <script src="js/validate.js"></script>
+
+        <!-- Custom script -->
+        <script src="js/custom.js"></script>
+
+        <!--Google Map-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevTAR-V2fDy9gQsQn1xNHBPH2D36kck0"></script>
+        <script src="js/map-script.js"></script>
+        <!--End Google Map APi-->
+        <script type="text/javascript">
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+    </div>
+
+  <!-- <script>
+    const items = document.querySelectorAll(".accordion a");
+    function toggleAccordion(){
+     this.classList.toggle('active');
+     this.nextElementSibling.classList.toggle('active');
+    }
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script> -->
+</body>
+
+<!-- Mirrored from html.tonatheme.com/2019/Wiscon/sponsor.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 May 2019 17:11:14 GMT -->
+</html>

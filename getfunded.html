@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Get Funded</title>
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/f6.jpg" type="image/x-icon">
+    <link rel="icon" href="images/f6.jpg" type="image/x-icon">
+
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/sourcesanspro-font.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+<!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<style>
+.maihead{
+font-family: 'Varela Round';
+font-size: 70px;
+font-weight: 500;
+line-height: 70px;
+max-width: 100%;
+padding: 20px 0px 5px;
+color: #ffffff;
+}
+.maihead6{
+font-size: 20px;
+font-family: 'Varela Round';
+line-height: 1.2;
+max-width: 100%;
+text-align: center;
+
+}
+.maihead2{
+font-size: 20px;
+font-family: 'Varela Round';
+line-height: 1.2;
+padding-bottom: 10px;
+
+
+}
+.maihead3{
+font-size: 80px;
+line-height: 1.0;
+
+font-family:'Annie Use Your Telescope';
+padding-bottom: 100px;
+
+}
+.maihead4{
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+line-height: 1.2;
+text-align: center;
+
+}
+.maihead7{
+font-size: 15px;
+font-family: 'Roboto', sans-serif;
+line-height: 0.9;
+text-align: center;
+
+}
+.maihead5{
+font-size: 30px;
+font-family: 'Raleway', sans-serif;
+line-height: 1.2;
+text-align: center;
+color: purple;
+}
+ul.b {
+  list-style-type: "square";
+}
+.testg {
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  text-align: left;
+  align-self: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+.wrapper1{
+  font-size:16px;
+  text-align: center;
+}
+
+.container1 {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 0;
+  color: #000;
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  float: none;
+  margin: 1.5%;
+  width: 97%;
+  max-width: 1400px;
+}
+.tile {
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  float: none;
+  margin: 1.5%;
+  padding: 0;
+   max-width: 46.5%;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  overflow: hidden;
+  transition: -webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875),-webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+}
+.tile:hover, .tile:focus {
+  box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.tile-quad {
+  max-width: 30.3333%;
+  height: 250px;
+  color: #000;
+
+}
+.tile figure {
+  z-index: 0;
+  margin: 0;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition: all 1.5s cubic-bezier(.190, 1.000, .220, 1.000);
+  -webkit-transition: all 1.5s cubic-bezier(.190, 1.000, .220, 1.000);
+  -moz-transition: all 1.5s cubic-bezier(.190, 1.000, .220, 1.000);
+  -ms-transition: all 1.5s cubic-bezier(.190, 1.000, .220, 1.000);
+  -o-transition: all 1.5s cubic-bezier(.190, 1.000, .220, 1.000);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: gray; /* IE 6-9 */
+}
+.tile:hover figure, .tile:focus figure {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.tile a {
+  display: table;
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  /*  background: rgba(0,0,0,.5); */
+  transition: all .25s;
+}
+
+.tile a div {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 2rem;
+}
+.tile h3 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 0 1rem;
+  line-height: 1;
+}
+.tile p {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  width: auto;
+  transition: opacity 0s, max-height 0s;
+}
+
+.tile a:hover p, .tile a:focus p {
+  color: #fff;
+  transition: all .5s;
+}
+.tile span {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  margin: 0;
+  padding: 4rem 5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+.color-red {
+  background: rgba(255, 60, 78, 0.4);
+}
+.color-yellow {
+  background: rgba(255, 255, 0, 0.2);
+}
+.color-green {
+  background: rgba(0, 128, 0, 0.4);
+}
+.color-blue {
+  background: rgba(11, 56, 91, 0.5);
+}
+.color-brown {
+   background: rgb(140, 118, 96, 0.4);
+}
+.color-aqua {
+   background: rgba(48, 228, 212, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+  .tile,
+  .tile:nth-child(2),
+  .tile:nth-child(4),
+  .tile:nth-child(6),
+  .tile:nth-child(8) {
+    max-width: 97%;
+  }
+  }
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.containerF {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+h3.F {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
+
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+} */
+
+
+
+.text1{
+  color: #000;
+}
+</style>
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!--Start Preloader -->
+        <div class="preloader"></div>
+        <!--End Preloader -->
+        <!-- Main Header-->
+        <header class="main-header" >
+
+
+
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container">
+                    <div class="clearfix">
+
+                        <div class="float-left logo-box">
+                            <div class="logo"><a href="index.html"><img src="images/E-summit.png" alt="LOGO" height="103" width="304" title=""></a></div>
+                        </div>
+
+                        <div class="nav-outer clearfix">
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+                                <div class="navbar-header" id="navbar">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="current dropdown">
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#Perks">Perks</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#Structure">Structure</a>
+
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="#Rules">Rules</a>
+
+                                        </li>
+
+
+
+                                        <li class="dropdown">
+                                            <a href="#Sponsors">Sponsors</a>
+
+                                        </li>
+
+                                        <li><a href="#Contact">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+
+                            <!--Button Box-->
+                            <div class="button-box">
+      <!-- http://bit.ly/2HzJ54d -->    <a href="/" onclick="return false;" class="theme-btn btn-style-one"><small>APPLY (Opening Soon!)</small></a>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+
+
+        </header>
+        <!--End Main Header -->
+        <!-- Page Title-->
+        <section class="page-title" style="background: url(crazy_ideas/images/p2.jpg);">
+            <div class="container">
+                <div class="title-text text-center">
+                    <div class = "maihead" align="center">Get Funded</div>
+
+                </div>
+            </div>
+
+        </section>
+        <br> <br>
+        <!-- End Page Title-->
+
+        <section class="schedule-section one" id="About">
+            <div class="container" id="about">
+
+
+                <div class="schedule-content clearfix">
+                    <div class="sec-title-two text-center">
+
+                        <h2>About</h2>
+                    </div></br><div class="about-text">
+                        <h6>
+                            <div class="text">Get Funded</div>
+                            <p>
+                                 Get Funded is a startup-investor meet organized by SESC, IIT Indore in its flagship
+                                  event, E-Summit. It is a day-long session in which, selected top 15 start-ups and
+                                  entrepreneurs from different domains will pitch their business model in front of a
+                                  panel comprising Investors, Venture Capitalists (VCs), Mentors, and Judges to acquire funding.
+                            </p></div></div></section>
+
+                            <br><br>
+
+
+
+        <section class="schedule-section one" id="Perks">
+            <div class="container" id="events6">
+
+                <div class="schedule-area">
+                    <div class="schedule-title">
+                       <h3></h3>
+                        </div>
+                    </div>
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>Perks</h2>
+                      </div></br>
+
+                                                <div class="wrapper1">  <h3></h3>
+                          <div class="container1">
+
+                            <div class="tile tile-quad">
+                            <figure style="background-image: url('crazy_ideas/images/incubation.jpeg');"></figure>
+                            <a href="/" onclick="return false;" class="color-blue">
+                            <div>
+                            <h3>Incubation and Mentorship</h3>
+                            <p> All the selected startups will get professional mentorship for 4 weeks by experienced mentors. </p>
+                            </div>
+                            </a>
+                            </div>
+
+                          <div class="tile tile-quad">
+                          <figure style="background-image: url('crazy_ideas/images/funding.jpg');"></figure>
+                          <a href="/" onclick="return false;" class="color-blue">
+                          <div>
+                          <h3>Funding Opportunity</h3>
+                          <p>Get a chance to acquire seed funding for your startup.</p>
+                          </div>
+                          </a>
+                          </div>
+
+                          <div class="tile tile-quad">
+                          <figure style="background-image: url('crazy_ideas/images/recognition.jpg');"></figure>
+                          <a href="/" onclick="return false;" class="color-blue">
+                          <div>
+                          <h3>Recognition</h3>
+                          <p>Gain exposure and recognition from other start-ups, VCs and angel investors, and other prominent people.
+                          </p>
+                          </div>
+                          </a>
+                          </div>
+
+
+
+
+
+
+
+                          </div>
+                          </div>
+
+                    </div>
+          </div>
+        </section><br>
+
+        <section class="schedule-section one" id="Structure">
+            <div class="container" id="events2">
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>Structure</h2>
+                      </div></br>
+                      <div><h3><b>Registraion Process:</b></h3></br></div>
+                      Startups are required to register online and submit an abstract pitch deck of their startup along with answers to some of the basic questions.
+                      After going through the evaluation process, the selected top 15 startups will get 4 weeks of mentorship to prepare for their pitch in front of
+                      investors. The startups
+                      will then be called for the pitching session during the E-Summit IIT Indore.
+                      <br><br>
+                      <div><h3><b>Pitching Session:</b><h3></div>
+                        <br> Each startup has to pitch their ideas in front of a panel consisting of Investors, Venture Capitalists, Mentors, and Judges.
+                       A total of 6 minutes is allotted for a presentation and 4 minutes is for a QnA session in which the panel may question them. Each presentation
+                        should be accompanied by a PPSX file of at most 15 slides.
+                                        <br/>
+                    </div>
+
+          </div>
+        </section><br>
+
+        <section class="schedule-section one" id="Rules">
+            <div class="container" id="events1">
+
+                <div class="schedule-area">
+                    <div class="schedule-title">
+                       <h3></h3>
+                        </div>
+                    </div>
+                    <div class="schedule-content clearfix">
+                      <div class="sec-title">
+
+                          <h2>Rules and Regulations</h2>
+                      </div></br>
+                      <b>1.</b>	Startups must be based on one of these sectors:  Healthcare, Edutech, Fintech, AI/ML, E-commerce.<br/></br>
+                      <b>2.</b>	Start-ups which have been incorporated more than one year ago (i.e. registered on or before 1 September 2018) are not eligible to participate.<br/></br>
+                      <b>3.</b>	Startups and Ventures that have already acquired some funding from external investor-networks (angels, VC's, etc) cannot participate. We believe in promoting start-ups that require assistance in the form of seed capital, mentoring and various types of consultancies.
+                    </br><br/><b>Note:</b> Teams may be asked to provide proofs of the above criteria at any time during the competition and in the eventuality of wrong details/misinformation your entry shall be disqualified.
+                  <br/>
+                    </div>
+          </div>
+        </section><br>
+
+              <br>
+        <br>
+
+
+
+        <br>
+        <div class="button-box" align = "center">
+            <a href="/" onclick="return false;" class="theme-btn btn-style-one">Apply for GET FUNDED<br/><small>Opening soon!</small></a>  <!-- http://bit.ly/2HzJ54d -->
+        </div>
+
+
+
+        <br/><br/><br/><br/><br/>
+
+
+
+
+
+
+        <!--End Sponsor Section-->
+
+        <!-- Main Footer-->
+        <footer class="main-footer" style="background: url(images/background/footer.jpg);">
+            <div class="container" id="Contact">
+                <div class="footer-area text-center">
+                    <div class="footer-logo">
+                        <figure>
+                            <a href="http://sesc.iiti.ac.in/"><img src="images/12.png" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="info-area">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-placeholder"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>IIT Indore <br>Simrol,Indore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>+91-8319602071<br>+91-9479554628</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="contact-info-item-one">
+                                    <div class="icon-box">
+                                        <i class="flaticon-e-mail-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            <a href="mailto:esummit@iiti.ac.in">esummit@iiti.ac.in</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/sesciiti/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/sesciiti"><i class="fab fa-twitter"></i></a></li>
+
+                        <li><a href="https://www.linkedin.com/company/sesc-iiti/about/"><i class="fab fa-linkedin-in"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/sesc.iiti/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <!--End Main Footer-->
+        <!--Footer Bottom Section-->
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    Copyright &copy; <a href="#">ESummit 2019, IIT Indore</a> 2019. All Rights Reserved
+                </div>
+            </div>
+        </section>
+        <!--End Footer Bottom Section-->
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/appear.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/bxslider.js"></script>
+        <script src="js/validate.js"></script>
+
+        <!-- Custom script -->
+        <script src="js/custom.js"></script>
+
+        <!--Google Map-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevTAR-V2fDy9gQsQn1xNHBPH2D36kck0"></script>
+        <script src="js/map-script.js"></script>
+        <!--End Google Map APi-->
+        <script type="text/javascript">
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+    </div>
+
+  <!-- <script>
+    const items = document.querySelectorAll(".accordion a");
+    function toggleAccordion(){
+     this.classList.toggle('active');
+     this.nextElementSibling.classList.toggle('active');
+    }
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script> -->
+</body>
+
+<!-- Mirrored from html.tonatheme.com/2019/Wiscon/sponsor.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 May 2019 17:11:14 GMT -->
+</html>
