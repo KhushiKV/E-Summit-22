@@ -1,896 +1,1199 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <title>E-Summit 20</title>
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta charset="UTF-8">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<title>E-Summit 20</title>
-	<!-- responsive meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-	<!-- For IE -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/E-Summit-20-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="images/E-Summit-20-logo.png" type="image/x-icon" />
+    <!-- Icons font CSS-->
+    <link
+      href="vendor/mdi-font/css/material-design-iconic-font.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      href="vendor/font-awesome-4.7/css/font-awesome.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <!-- Flaticons font CSS-->
+    <link rel="stylesheet" type="text/css" href="vendor/font/flaticon.css" />
+    <!-- Font special for pages-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
 
-	<!-- master stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all" />
+    <link
+      href="vendor/datepicker/daterangepicker.css"
+      rel="stylesheet"
+      media="all"
+    />
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/E-Summit-20-logo.png" type="image/x-icon">
-	<link rel="icon" href="images/E-Summit-20-logo.png" type="image/x-icon">
-	<!-- Icons font CSS-->
-	<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-	<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-	<!-- Flaticons font CSS-->
-	<link rel="stylesheet" type="text/css" href="vendor/font/flaticon.css">
-	<!-- Font special for pages-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all" />
 
-	<!-- Vendor CSS-->
-	<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-	<link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-121576239-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-	<!-- Main CSS-->
-	<link href="css/main.css" rel="stylesheet" media="all">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121576239-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+      gtag("config", "UA-121576239-3");
+    </script>
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
+    <style>
+      body {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+      }
 
-		gtag('config', 'UA-121576239-3');
-	</script>
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
 
-	<style>
-		body {
-			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 14px;
-			line-height: 1.5em;
-			font-weight: 400;
+      strong {
+        font-weight: 600;
+      }
 
-		}
+      h3 {
+        font-size: 24px;
+        letter-spacing: -0.25px;
+        font-weight: 900;
+      }
 
-		p {
-			font-size: 16px;
-			font-weight: 500;
-		}
+      h4 {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 140%;
+      }
 
-		strong {
-			font-weight: 600;
-		}
+      .tile {
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        background: #aaa;
+        padding: 20px;
+        margin-bottom: 5px;
+      }
 
-		h3 {
-			font-size: 24px;
-			letter-spacing: -0.25px;
-			font-weight: 900;
-		}
+      .tile .title {
+        color: #f2f2f2;
+        margin-top: 0px;
+      }
 
-		h4 {
-			font-size: 21px;
-			font-weight: 300;
-			line-height: 140%;
-		}
+      .tile.purple,
+      .tile.blue,
+      .tile.red,
+      .tile.orange,
+      .tile.green,
+      .tile.primary {
+        color: #fff;
+      }
 
-		.tile {
-			width: 100%;
-			display: inline-block;
-			box-sizing: border-box;
-			background: #aaa;
-			padding: 20px;
-			margin-bottom: 5px;
-		}
+      .tile.purple {
+        background: #5133ab;
+      }
 
-		.tile .title {
-			color: #f2f2f2;
-			margin-top: 0px;
-		}
+      .tile.purple:hover {
+        background: #3e2784;
+      }
 
-		.tile.purple,
-		.tile.blue,
-		.tile.red,
-		.tile.orange,
-		.tile.green,
-		.tile.primary {
-			color: #fff;
-		}
+      .tile.red {
+        background: #ac193d;
+      }
 
-		.tile.purple {
-			background: #5133ab;
-		}
+      .tile.red:hover {
+        background: #7f132d;
+      }
 
-		.tile.purple:hover {
-			background: #3e2784;
-		}
+      .tile.green {
+        background: #00a600;
+      }
 
-		.tile.red {
-			background: #ac193d;
-		}
+      .tile.green:hover {
+        background: #007300;
+      }
 
-		.tile.red:hover {
-			background: #7f132d;
-		}
+      .tile.blue {
+        background: #2672ec;
+      }
 
-		.tile.green {
-			background: #00a600;
-		}
+      .tile.blue:hover {
+        background: #125acd;
+      }
 
-		.tile.green:hover {
-			background: #007300;
-		}
+      .tile.orange {
+        background: #dc572e;
+      }
 
-		.tile.blue {
-			background: #2672ec;
-		}
+      .tile.orange:hover {
+        background: #b8431f;
+      }
 
-		.tile.blue:hover {
-			background: #125acd;
-		}
+      .tile.primary {
+        background: #004a8c;
+        border-radius: 4px;
+      }
 
-		.tile.orange {
-			background: #dc572e;
-		}
+      .tile.primary:hover {
+        background: #00305a;
+      }
 
-		.tile.orange:hover {
-			background: #b8431f;
-		}
+      .expo {
+        padding-top: 0px;
+      }
+    </style>
+  </head>
 
-		.tile.primary {
-			background: #004a8c;
-			border-radius: 4px;
-		}
+  <body>
+    <div class="boxed_wrapper">
+      <!--Start Preloader -->
+      <div class="preloader"></div>
+      <!--End Preloader -->
+      <div class="sdfasd"></div>
 
-		.tile.primary:hover {
-			background: #00305a;
-		}
+      <!-- Main Header-->
+      <header class="main-header">
+        <!--Header Top-->
+        <!--Header-Upper-->
+        <div class="header-upper">
+          <div class="container">
+            <div class="clearfix">
+              <div class="float-left logo-box">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img
+                      src="images/E-Cell-Logo-NOBG.png"
+                      alt="LOGO"
+                      height="103"
+                      width="304"
+                      title="E-summit"
+                  /></a>
+                </div>
+              </div>
 
-		.expo {
-			padding-top: 0px;
-		}
-	</style>
-</head>
+              <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-md">
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
 
-<body>
+                  <div
+                    class="navbar-collapse collapse clearfix"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navigation clearfix">
+                      <li class="current dropdown">
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#About">Theme</a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#events">Events</a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#Schedule">Schedule</a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#sponsor-tab">Sponsors</a>
+                      </li>
 
-	<div class="boxed_wrapper">
+                      <li><a href="#Contact">Contact us</a></li>
+                    </ul>
+                  </div>
+                </nav>
 
-		<!--Start Preloader -->
-		<div class="preloader"></div>
-		<!--End Preloader -->
-		<div class="sdfasd"></div>
+                <!--Button Box  link = http://bit.ly/2YJcvCI   -->
+                <div
+                  class="button-box"
+                  link="https://forms.gle/ZPgseu5uyEp7XLwN8"
+                >
+                  <a
+                    href="https://forms.gle/ZPgseu5uyEp7XLwN8"
+                    onclick="return true;"
+                    target="_blank"
+                    class="theme-btn btn-style-one"
+                    >Register
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Header Upper-->
+        <!--Sticky Header-->
+        <!--End Sticky Header-->
+      </header>
+      <!--End Main Header -->
+      <!--Main Slider-->
 
-		<!-- Main Header-->
-		<header class="main-header">
-
-			<!--Header Top-->
-			<!--Header-Upper-->
-			<div class="header-upper">
-				<div class="container">
-					<div class="clearfix">
-
-						<div class="float-left logo-box">
-							<div class="logo"><a href="index.html"><img src="images/E_SUMMIT_Small.png" alt="LOGO" height="103" width="304" title="E-summit"></a></div>
-						</div>
-
-						<div class="nav-outer clearfix">
-
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md">
-								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="current dropdown">
-											<a href="#">Home</a>
-
-										</li>
-										<li class="dropdown">
-											<a href="#About">Theme</a>
-
-										</li>
-										<li class="dropdown">
-											<a href="#events">Events</a>
-
-										</li>
-										<li class="dropdown">
-											<a href="#Schedule">Schedule</a>
-
-										</li>
-										<li class="dropdown">
-											<a href="#sponsor-tab">Sponsors</a>
-
-										</li>
-
-										<li><a href="#Contact">Contact us</a></li>
-									</ul>
-								</div>
-
-							</nav>
-
-							<!--Button Box  link = http://bit.ly/2YJcvCI   -->
-							<div class="button-box" link="https://forms.gle/ZPgseu5uyEp7XLwN8">
-								<a href="https://forms.gle/ZPgseu5uyEp7XLwN8" onclick="return true;" target="_blank" class="theme-btn btn-style-one">Register </a>
-							</div>
-
-
-
-						</div>
-
-					</div>
-				</div>
+	  <section class="hero" id="Hero">
+		<div class="container" id="Hero">
+		  <div class="schedule-content clearfix" id="Hero">
+			<div class="sec-title-two text-center" id="Hero">
+			  <img
+				src="images/E_SUMMIT_Small_NOBG.png"
+				width="800"
+				alt="LOGO"
+				title="E-summit"
+				id="Hero"
+			  />
 			</div>
-			<!--End Header Upper-->
-			<!--Sticky Header-->
-			<!--End Sticky Header-->
-
-		</header>
-		<!--End Main Header -->
-		<!--Main Slider-->
-
-
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner main-slider" role="listbox">
-				<!-- Slide One - Set the background image for this slide in the line below -->
-				<div class="carousel-item active  " style="background-image: url(images/background/DB10.JPG); ">
-					<div class="container" style="padding-top: 150px;
-                        ">
-						<h2 class="mystyle" style="color:white !important">E-Summit<br> 20</h2>
-						<div class="text mystyle" style="color:white !important"> Indian Institute of Technology Indore </div>
-						<div class="link-box myBox">
-							<!-- http://bit.ly/2YJcvCI --> <a href="https://forms.gle/ZPgseu5uyEp7XLwN8" onclick="return true;" target="_blank" class="theme-btn btn-style-two">Register Now<br /></a>
-						</div>
-					</div>
-				</div>
-				<!-- Slide Two - Set the background image for this slide in the line below -->
-				<div class="carousel-item " style="background-image: url(images/background/DB11.jpg)">
-					<div class="container" style="padding-top: 100px">
-						<h2 class="mystyle" style="color:white !important">A Virtual Forum of<br> Excogitation </h2>
-						<div class="text"> </div>
-						<div class="link-box myBox">
-							<!-- http://bit.ly/2YJcvCI --> <a href="https://forms.gle/ZPgseu5uyEp7XLwN8" onclick="return false;" target="_blank" class="theme-btn btn-style-two">Register Now<br /></a>
-						</div>
-					</div>
-				</div>
-				<!-- Slide Three - Set the background image for this slide in the line below -->
-				<div class="carousel-item " style="background-image: url(images/background/DB12.jpg)">
-					<div class="content container" style="padding-top: 100px">
-						<h2 class="mystyle" style="color:white !important"><br></h2>
-						<h2 class="mystyle"></h2>
-						<div class="text"> </div>
-						<div class="link-box myBox">
-							<!-- http://bit.ly/2YJcvCI --> <a href="https://forms.gle/ZPgseu5uyEp7XLwN8" onclick="return false;" target="_blank" class="theme-btn btn-style-two">Register Now<br /></a>
-						</div>
-					</div>
-				</div>
+			<div class="link-box myBox text-center" id="Hero">
+			  <!-- http://bit.ly/2YJcvCI -->
+			  <a
+				href="https://forms.gle/ZPgseu5uyEp7XLwN8"
+				onclick="return false;"
+				target="_blank"
+				class="theme-btn btn-style-two btn-hero"
+				id="Hero"
+				>Register Now<br
+			  /></a>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+		  </div>
 		</div>
-
-
-		<!-- Page Content -->
-		<!--End Main Slider-->
-		<!--About Section-->
-		<br><br><br><br>
-
-		<section class="schedule-section one" id="About">
-			<div class="container" id="about">
-				<div class="schedule-content clearfix">
-					<div class="sec-title-two text-center">
-						<div class="sec-title-two text-center">
-							<h6>E-SUMMIT'20</h6>
-							<h2><span>Theme</span></h2>
-						</div>
-					</div>
-					<div class="about-text">
-						<div class="text">
-							<center>"A Virtual Forum of Excogitation"</center>
-						</div>
-						<center>
-							<p>
-								E-Cell, IIT Indore believes that
-								“Entrepreneurship” is not only about
-								building and growing companies, but a
-								pathway to cultivate India’s socio-economic
-								development. Our strong faith lies in
-								fabricating students and faculties line-ofthought ‘entrepreneurial’ in their daily
-								moil.We also assist them to solve global
-								challenges because we stand for the
-								thought that “Students are the greatest
-								capital” and aim to nurture them, also
-								bestow them with opportunities in various
-								forms like incubation; for their excellence.
-							</p>
-						</center>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<br><br><br><br>
-		<!--End About Section-->
-		<!--Fact Counter Area-->
-		<section class="fact-counter-area" style="background-image:url(images/background/fact.jpg);">
-			<!-- <div class="container"> -->
-			<div class="row">
-				<!--Start single item-->
-				<div class="col-xl-3 col-md-6 col-sm-12">
-					<div class="fact-single-item text-center">
-						<i class="flaticon-calendar"></i>
-
-						<p>Apr 1 - 6<br>2021</p>
-					</div>
-				</div>
-				<!--End single item-->
-				<!--Start single item-->
-				<div class="col-xl-3 col-md-6 col-sm-12">
-					<div class="fact-single-item text-center">
-						<i class="flaticon-placeholder"></i>
-
-						<p>IIT Indore, Khandwa Road, Indore - 453552 </p>
-					</div>
-				</div>
-				<!--End single item-->
-				<!--Start single item-->
-				<div class="col-xl-3 col-md-6 col-sm-12">
-					<div class="fact-single-item text-center">
-						<i class="flaticon-idea"></i>
-
-						<p>Brainstorming <br>Events</p>
-					</div>
-				</div>
-				<!--End single item-->
-				<!--Start single item-->
-				<div class="col-xl-3 col-md-6 col-sm-12">
-					<div class="fact-single-item text-center">
-						<i class="flaticon-coins"></i>
-
-						<p>Prizes worth <br>1 Lakh</p>
-					</div>
-				</div>
-				<!--End single item-->
-			</div>
-			<!-- </div> -->
-		</section>
-		<!--End Fact Counter Area-->
-		<br /><br /><br><br>
-		<!--Schedule Section-->
-		<section class="schedule-section one" id="schedule-tab ">
-			<div class="container" id="Schedule">
-				<div class="sec-title-two text-center">
-					<h6>TIMELINE</h6>
-					<h2>Event <span>Schedule</span></h2>
-				</div>
-			</div>
-		</section>
-		<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="8"></li>
-				<li data-target="#carouselExampleIndicators1" data-slide-to="9"></li>
-			</ol>
-			<div class="carousel-inner main-slider" role="listbox">
-				<!-- Slide One - Set the background image for this slide in the line below -->
-				<div class="carousel-item active" align="center">
-					<img src="Schedule/Schedule.jpeg" style=" max-width: 27%;" alt=" Schedule ">
-				</div>
-				<div class="carousel-item " align="center">
-					<img src="Schedule/Panel.jpeg" style=" max-width: 38%;" alt=" Panel ">
-				</div>
-				<!-- Slide Two - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr1_1.jpeg" style=" max-width: 38%;" alt=" Keki M Mistry ">
-				</div>
-				<!-- Slide Three - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr1_2.jpeg" style=" max-width: 38%;" alt=" Mayank Pratap ">
-				</div>
-				<!-- Slide Four - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr2_1.jpeg" style=" max-width: 38%;" alt=" Amit Lodha ">
-				</div>
-				<!-- Slide Five - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr2_2.jpeg" style=" max-width: 38%;" alt=" Panel discussion Amit Trivedi and Rupanshi Shrivastava ">
-				</div>
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr2_3.jpeg" style=" max-width: 38%;" alt=" Sam Pitroda ">
-				</div>
-				<!-- Slide Six - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr3_1.jpeg" style=" max-width: 38%;" alt=" Maya Vishwakarma ">
-				</div>
-				<!-- Slide Seven - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr3_2.jpeg" style=" max-width: 38%;" alt=" Panel discussion Rahul Nair and Siddhaarth Aalambayan ">
-				</div>
-				<!-- Slide Eight - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr4_1.jpeg" style=" max-width: 38%;" alt=" Rijul Arora ">
-				</div>
-				<!-- Slide Nine - Set the background image for this slide in the line below -->
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr4_2.jpeg" style=" max-width: 38%;" alt=" Panel discussion Sam Baisla, Sidharth Jain and Taha Malik ">
-				</div>
-				<div class="carousel-item" align="center">
-					<img src="Schedule/Apr6_1.jpeg" style=" max-width: 38%;" alt=" Zerodha Workshop ">
-				</div>
-			</div>
-			<a class="carousel-control-prev1" style="background-color: #1b1e2141;" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next1" style="background-color: #1b1e2141;" href="#carouselExampleIndicators1" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-		<!--End Schedule Section-->
-		<!--Event details section-->
-		<br /><br /><br><br>
-		<div background="cream">
-			<section class="schedule-section one" id="schedule-tab">
-				<div class="container" id="events">
-					<div class="sec-title-two text-center">
-						<h6>EVENT </h6>
-						<h2>Event <span>Details</span></h2>
-					</div>
-					<div class="schedule-area">
-						<div class="schedule-title">
-							<div class="item active" data-tab-name="day-one">
-								<div class="item-text">
-									<h6>Main Events</h6>
-
-								</div>
-							</div>
-							<div class="item" data-tab-name="day-two">
-								<div class="item-text">
-									<h6>Competitions</h6>
-
-								</div>
-							</div>
-							<div class="item" data-tab-name="day-three">
-								<div class="item-text">
-									<h6>Workshops</h6>
-
-								</div>
-							</div>
-						</div>
-						<div class="schedule-content clearfix">
-							<div id="day-one" class="item1">
-								<div class="row">
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="getfunded.html" target="_blank">
-											<div class="tile primary">
-												<h3 class="title">Get Funded</h3>
-												<p>
-													<br /><br>Get Funded is a day-long startup-investor meet in which start-ups and entrepreneurs from different domains pitch their business model in
-													front of Investors Panel to seek funding.
-													<br><br />
-												</p>
-											</div>
-										</a>
-										<div class="button-box" align="center">
-											<a href="getfunded.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
-										</div><br>
-									</div>
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="Expo.html" target="_blank">
-											<div class="tile primary">
-												<h3 class="title">Startup-Expo</h3>
-												<p><br /><br />Platform for innovative startups to showcase their product and services and to get in touch with thousands of potential customers and investors.<br /><br><br></p>
-											</div>
-										</a>
-										<div class="expo">
-											<div class="button-box" align="center">
-												<a href="Expo.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
-											</div>
-										</div><br>
-									</div>
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Panel Discussion</h3>
-												<p><br />An interactive session which observes exchange of knowledge and experiences, giving a panel of experts and audience a chance to discuss a particular topic.<br /><br></p>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Lectures</h3>
-												<p><br /><br />Discover, learn, develop skills that every entrepreneur requires in his journey. A chance to learn from the best experts in the country.<br /><br><br> </p>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div id="day-two" class="item1">
-								<div class="row">
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="Engendea.html" target="_blank">
-											<div class="tile primary">
-												<h3 class="title">Engendea</h3>
-												<p>
-													<br />Engendea is a business model competition in which college students team up and compete with each other and present their business plans to the jury. The most impressive ideas are rewarded.<br><br>
-												</p>
-											</div>
-										</a>
-										<div class="button-box" align="center">
-											<a href="Engendea.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
-										</div>
-										<br>
-									</div>
-
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="crazyideas.html" target="blank">
-											<div class="tile primary">
-												<h3 class="title">Crazy Ideas</h3>
-												<p><br />A brainstorming competition targeting high school students to promote both creative thinking and strategic planning bringing out the hidden entrepreneur in them and help them think how they could implement that in
-													real life.</p>
-											</div>
-										</a>
-										<div class="button-box" align="center">
-											<a href="crazyideas.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
-										</div>
-										<br>
-									</div>
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Biz Quiz</h3>
-												<p><br />Unleash the nerd inside you and fight out to emerge victoriously and prove your mettle. This is for the financial enthusiasts to enhance their knowledge with a motive of providing Edutainment.<br><br></p>
-											</div>
-										</a>
-									</div>
-
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Social Innovation Challenge</h3>
-												<p>
-													<br />Ever thought of solving global problems? Here's your chance to contibute feasible solutions to utmost important issues of the society like pollition, traffic, sustainable energy.
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="row">
-									</div>
-
-
-
-								</div>
-							</div>
-							<div id="day-three" class="item1">
-								<div class="row">
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Stock Market</h3>
-												<p><br><br>Do you want to learn how to make money in the stock market, but do not know where to start? Do you passionately want to become the next 'Warren Buffett'? Learn all about the Art of Stock trading in this
-													workshop.<br /> </p>
-											</div>
-										</a>
-									</div>
-
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Digital Marketing</h3>
-												<p><br>Digital marketing includes all marketing efforts that uses internet. Businesses contest on digital channels such as search engines, social media, mobile apps, email, and their websites to connect with current and
-													prospective customers.<br /> </p>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">Big Data</h3>
-												<p><br /><br />Big data analytics helps organizations harness their data and use it to identify new opportunities. That, in turn, leads to smarter business moves, more efficient operations, higher profits, and happier
-													customers. <br /> </p>
-											</div>
-										</a>
-									</div>
-
-									<div class="col-md-3 col-sm-4 col-xs-12">
-										<a href="/" onclick="return false;">
-											<div class="tile primary">
-												<h3 class="title">AI & ML</h3>
-												<p><br>
-													<br />Modern day technologies like Artifical Intelligence(AI) and Machine learning(ML) have proven to be an indespensable part of new industry standards as they can help make products and services smarter and more valuable.
-
-												</p>
-											</div>
-										</a>
-									</div>
-								</div><br>
-								<div class="button-box" align="center">
-									<a href="/" onclick="return false;" target="_blank" class="theme-btn btn-style-one">Apply now for workshops <br /> <small> opening soon!</small> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<br /><br /><br /><br />
-		<!--End of Event detail area-->
-		<!--Sponsor Section-->
-
-		<!--Gallery Section-->
-		<br><br><br>
-		<section class="gallery-section">
-			<div class="container-fluid">
-				<div class="sec-title-two text-center">
-					<h6>GLIMPSES FROM PREVIOUS</h6>
-					<h2>E-Summits</h2>
-				</div>
-				<div class="gallery-container">
-					<div class="row">
-						<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image-box thumb-item">
-									<img src="images/gallery/a.png" alt="images" class="img-responsive thumb-item__image">
-									<div class="overlay-box">
-									</div>
-									<div class="thumb-item__info">
-										<h3>
-											Lorem ipsum
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/b.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-									</div>
-									<div class="thumb-item__info">
-										<h3>
-											Lorem ipsum
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/c.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/d.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-									</div>
-								</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/e.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-									</div>
-								</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/f.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-									</div>
-								</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/g.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-									</div>
-								</div>
-							<div class="p-0 col-xl-3 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="image-box thumb-item">
-										<img src="images/gallery/h.png" alt="images" class="img-responsive thumb-item__image">
-										<div class="overlay-box">
-										</div>
-										<div class="thumb-item__info">
-											<h3>
-												Lorem ipsum
-											</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											</p>
-										</div>
-									</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-		</section>
-		<!--End Gallery Section-->
-		<!-- Main Footer-->
-		<footer class="main-footer" style="background: url(images/background/DB4.jpg);">
-			<div class="container" id="Contact">
-				<div class="footer-area text-center">
-					<div class="info-area">
-						<div class="row">
-							<div class="col-xl-4 col-md-6 col-sm-12">
-								<div class="contact-info-item-one">
-									<div class="icon-box">
-										<i class="flaticon-placeholder"></i>
-									</div>
-									<div class="text">
-										<p>IIT Indore <br>Indore</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-md-6 col-sm-12">
-								<div class="contact-info-item-one">
-									<div class="icon-box">
-										<i class="flaticon-phone-call"></i>
-									</div>
-									<div class="text">
-										<p>Sumer Thakur (Head) <br>+91-9755894865</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-md-6 col-sm-12">
-								<div class="contact-info-item-one">
-									<div class="icon-box">
-										<i class="flaticon-e-mail-envelope"></i>
-									</div>
-									<div class="text">
-										<p>
-											<a href="mailto:esummit@iiti.ac.in">esummit@iiti.ac.in</a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<ul class="social-links">
-						<li><a href="https://www.facebook.com/sesciiti/"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="https://twitter.com/sesciiti"><i class="fab fa-twitter"></i></a></li>
-
-						<li><a href="https://www.linkedin.com/company/sesc-iiti/about/"><i class="fab fa-linkedin-in"></i></a></li>
-
-						<li><a href="https://www.instagram.com/ecell.iiti/"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-
-		</footer>
-		<!--End Main Footer-->
-		<!--Footer Bottom Section-->
-		<section class="footer-bottom">
-			<div class="container">
-				<div class="copyright-text text-center">
-					Copyright &copy; <a href="#">ESummit 2020, IIT Indore</a> 2020. All Rights Reserved
-				</div>
-			</div>
-		</section>
-		<!--End Footer Bottom Section-->
-		<!--Scroll to top-->
-		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-
-
-
-
-
-		<script src="js/jquery.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.fancybox.js"></script>
-		<script src="js/owl.js"></script>
-		<script src="js/wow.js"></script>
-		<script src="js/jquery.countTo.js"></script>
-		<script src="js/jquery.countdown.min.js"></script>
-		<script src="js/appear.js"></script>
-		<script src="js/jquery-ui.js"></script>
-		<script src="js/isotope.js"></script>
-		<script src="js/bxslider.js"></script>
-		<script src="js/validate.js"></script>
-
-		<!-- Custom script -->
-		<script src="js/custom.js"></script>
-
-
+	  </section>
 	</div>
-</body>
 
+	<section class="schedule-section one" id="About">
+	  <div class="container" id="about">
+		<div class="schedule-content">
+		  <div class="sec-title-two text-center">
+			<div class="sec-title-two text-center">
+			  <h6>E-SUMMIT'22</h6>
+			  <h2><span>Theme</span></h2>
+			</div>
+		  </div>
+		  <div class="about-text">
+			<div class="text">
+			  <center>"Unlocking Avenues"</center>
+			</div>
+			<center>
+			  <p>
+				Entrepreneurship and endeavour go hand in hand. It's risky but
+				we excogitate methods that result in success. E-Cell IIT
+				Indore believes in everyone's strengths and guides them to
+				make their dreams come to life. We shower everyone with new
+				opportunities that help them climb up the ladder to become
+				successful entrepreneurs. India needs the youth for a
+				skyrocketing increase in its jeopardising economy. Let's move
+				on and explore the path of a burgeoning future through
+				"Unlocking Avenues"
+			  </p>
+			</center>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<br /><br /><br /><br />
 
+      <!-- <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner main-slider" role="listbox">
+          <div
+            class="carousel-item active"
+            style="background-image: url(images/background/DB10.JPG)"
+          >
+            <div class="container" style="padding-top: 150px">
+              <h2 class="mystyle" style="color: white !important">
+                E-Summit<br />
+                20
+              </h2>
+              <div class="text mystyle" style="color: white !important">
+                Indian Institute of Technology Indore
+              </div>
+              <div class="link-box myBox">
+                <a
+                  href="https://forms.gle/ZPgseu5uyEp7XLwN8"
+                  onclick="return true;"
+                  target="_blank"
+                  class="theme-btn btn-style-two"
+                  >Register Now<br
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url(images/background/DB11.jpg)"
+          >
+            <div class="container" style="padding-top: 100px">
+              <h2 class="mystyle" style="color: white !important">
+                A Virtual Forum of<br />
+                Excogitation
+              </h2>
+              <div class="text"></div>
+              <div class="link-box myBox">
+                <a
+                  href="https://forms.gle/ZPgseu5uyEp7XLwN8"
+                  onclick="return false;"
+                  target="_blank"
+                  class="theme-btn btn-style-two"
+                  >Register Now<br
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url(images/background/DB12.jpg)"
+          >
+            <div class="content container" style="padding-top: 100px">
+              <h2 class="mystyle" style="color: white !important"><br /></h2>
+              <h2 class="mystyle"></h2>
+              <div class="text"></div>
+              <div class="link-box myBox">
+                <a
+                  href="https://forms.gle/ZPgseu5uyEp7XLwN8"
+                  onclick="return false;"
+                  target="_blank"
+                  class="theme-btn btn-style-two"
+                  >Register Now<br
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+      <section
+        class="fact-counter-area"
+        style="background-image: url(images/background/fact.jpg)"
+      >
+        <!-- <div class="container"> -->
+        <div class="row">
+          <!--Start single item-->
+          <div class="col-xl-3 col-md-6 col-sm-12">
+            <div class="fact-single-item text-center">
+              <i class="flaticon-calendar"></i>
+
+              <p>Apr 1 - 6<br />2021</p>
+            </div>
+          </div>
+          <!--End single item-->
+          <!--Start single item-->
+          <div class="col-xl-3 col-md-6 col-sm-12">
+            <div class="fact-single-item text-center">
+              <i class="flaticon-placeholder"></i>
+
+              <p>IIT Indore, Khandwa Road, Indore - 453552</p>
+            </div>
+          </div>
+          <!--End single item-->
+          <!--Start single item-->
+          <div class="col-xl-3 col-md-6 col-sm-12">
+            <div class="fact-single-item text-center">
+              <i class="flaticon-idea"></i>
+
+              <p>Brainstorming <br />Events</p>
+            </div>
+          </div>
+          <!--End single item-->
+          <!--Start single item-->
+          <div class="col-xl-3 col-md-6 col-sm-12">
+            <div class="fact-single-item text-center">
+              <i class="flaticon-coins"></i>
+
+              <p>Prizes worth <br />1 Lakh</p>
+            </div>
+          </div>
+          <!--End single item-->
+        </div>
+        <!-- </div> -->
+      </section>
+      <!--End Fact Counter Area-->
+      <br /><br /><br /><br />
+      <!--Schedule Section-->
+      <section class="schedule-section one" id="schedule-tab ">
+        <div class="container" id="Schedule">
+            <div class="sec-title-two text-center">
+                <h6>TIMELINE</h6>
+                <h2>Event <span>Schedule</span></h2>
+            </div>
+  </div>
+</section>
+<div class="mycontainer">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+        <input type="radio" name="slider" id="item-5">
+        <input type="radio" name="slider" id="item-6">
+        <input type="radio" name="slider" id="item-7">
+        <input type="radio" name="slider" id="item-8">
+        <input type="radio" name="slider" id="item-9">
+        <input type="radio" name="slider" id="item-10">
+        <input type="radio" name="slider" id="item-11">
+        <input type="radio" name="slider" id="item-12">
+        <div class="mycards">
+          <label class="mycard" for="item-1" id="schedule-1">
+            <img src="Schedule/Schedule.jpeg" alt=" Schedule ">
+          </label>
+          <label class="mycard" for="item-2" id="schedule-2">
+            <img src="Schedule/Panel.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-3" id="schedule-3">
+            <img src="Schedule/Apr1_1.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-4" id="schedule-4">
+            <img src="Schedule/Apr1_2.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-5" id="schedule-5">
+            <img src="Schedule/Apr2_1.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-6" id="schedule-6">
+            <img src="Schedule/Apr2_2.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-7" id="schedule-7">
+            <img src="Schedule/Apr2_3.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-8" id="schedule-8">
+            <img src="Schedule/Apr3_1.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-9" id="schedule-9">
+            <img src="Schedule/Apr3_2.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-10" id="schedule-10">
+            <img src="Schedule/Apr4_1.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-11" id="schedule-11">
+            <img src="Schedule/Apr4_2.jpeg" alt="schedule">
+          </label>
+          <label class="mycard" for="item-12" id="schedule-12">
+            <img src="Schedule/Apr6_1.jpeg" alt="schedule">
+          </label>
+        </div>
+    </div>
+    <!--End Schedule Section-->
+      <!--Event details section-->
+      <!-- <div background="cream">
+        <section class="schedule-section one" id="schedule-tab">
+          <div class="container" id="events">
+            <div class="sec-title-two text-center">
+              <h6>EVENT</h6>
+              <h2>Event <span>Details</span></h2>
+            </div>
+            <div class="schedule-area">
+              <div class="schedule-title">
+                <div class="item active" data-tab-name="day-one">
+                  <div class="item-text">
+                    <h6>Main Events</h6>
+                  </div>
+                </div>
+                <div class="item" data-tab-name="day-two">
+                  <div class="item-text">
+                    <h6>Competitions</h6>
+                  </div>
+                </div>
+                <div class="item" data-tab-name="day-three">
+                  <div class="item-text">
+                    <h6>Workshops</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-content clearfix">
+                <div id="day-one" class="item1">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="getfunded.html" target="_blank">
+                        <div class="tile primary">
+                          <h3 class="title">Get Funded</h3>
+                          <p>
+                            <br /><br />Get Funded is a day-long
+                            startup-investor meet in which start-ups and
+                            entrepreneurs from different domains pitch their
+                            business model in front of Investors Panel to seek
+                            funding. <br /><br />
+                          </p>
+                        </div>
+                      </a>
+                      <div class="button-box" align="center">
+                        <a
+                          href="getfunded.html"
+                          target="_blank"
+                          class="theme-btn btn-style-one"
+                          >Learn More</a
+                        >
+                      </div>
+                      <br />
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="Expo.html" target="_blank">
+                        <div class="tile primary">
+                          <h3 class="title">Startup-Expo</h3>
+                          <p>
+                            <br /><br />Platform for innovative startups to
+                            showcase their product and services and to get in
+                            touch with thousands of potential customers and
+                            investors.<br /><br /><br />
+                          </p>
+                        </div>
+                      </a>
+                      <div class="expo">
+                        <div class="button-box" align="center">
+                          <a
+                            href="Expo.html"
+                            target="_blank"
+                            class="theme-btn btn-style-one"
+                            >Learn More</a
+                          >
+                        </div>
+                      </div>
+                      <br />
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Panel Discussion</h3>
+                          <p>
+                            <br />An interactive session which observes exchange
+                            of knowledge and experiences, giving a panel of
+                            experts and audience a chance to discuss a
+                            particular topic.<br /><br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Lectures</h3>
+                          <p>
+                            <br /><br />Discover, learn, develop skills that
+                            every entrepreneur requires in his journey. A chance
+                            to learn from the best experts in the country.<br /><br /><br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="day-two" class="item1">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="Engendea.html" target="_blank">
+                        <div class="tile primary">
+                          <h3 class="title">Engendea</h3>
+                          <p>
+                            <br />Engendea is a business model competition in
+                            which college students team up and compete with each
+                            other and present their business plans to the jury.
+                            The most impressive ideas are rewarded.<br /><br />
+                          </p>
+                        </div>
+                      </a>
+                      <div class="button-box" align="center">
+                        <a
+                          href="Engendea.html"
+                          target="_blank"
+                          class="theme-btn btn-style-one"
+                          >Learn More</a
+                        >
+                      </div>
+                      <br />
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="crazyideas.html" target="blank">
+                        <div class="tile primary">
+                          <h3 class="title">Crazy Ideas</h3>
+                          <p>
+                            <br />A brainstorming competition targeting high
+                            school students to promote both creative thinking
+                            and strategic planning bringing out the hidden
+                            entrepreneur in them and help them think how they
+                            could implement that in real life.
+                          </p>
+                        </div>
+                      </a>
+                      <div class="button-box" align="center">
+                        <a
+                          href="crazyideas.html"
+                          target="_blank"
+                          class="theme-btn btn-style-one"
+                          >Learn More</a
+                        >
+                      </div>
+                      <br />
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Biz Quiz</h3>
+                          <p>
+                            <br />Unleash the nerd inside you and fight out to
+                            emerge victoriously and prove your mettle. This is
+                            for the financial enthusiasts to enhance their
+                            knowledge with a motive of providing Edutainment.<br /><br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Social Innovation Challenge</h3>
+                          <p>
+                            <br />Ever thought of solving global problems?
+                            Here's your chance to contibute feasible solutions
+                            to utmost important issues of the society like
+                            pollition, traffic, sustainable energy.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="row"></div>
+                  </div>
+                </div>
+                <div id="day-three" class="item1">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Stock Market</h3>
+                          <p>
+                            <br /><br />Do you want to learn how to make money
+                            in the stock market, but do not know where to start?
+                            Do you passionately want to become the next 'Warren
+                            Buffett'? Learn all about the Art of Stock trading
+                            in this workshop.<br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Digital Marketing</h3>
+                          <p>
+                            <br />Digital marketing includes all marketing
+                            efforts that uses internet. Businesses contest on
+                            digital channels such as search engines, social
+                            media, mobile apps, email, and their websites to
+                            connect with current and prospective customers.<br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">Big Data</h3>
+                          <p>
+                            <br /><br />Big data analytics helps organizations
+                            harness their data and use it to identify new
+                            opportunities. That, in turn, leads to smarter
+                            business moves, more efficient operations, higher
+                            profits, and happier customers. <br />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="/" onclick="return false;">
+                        <div class="tile primary">
+                          <h3 class="title">AI & ML</h3>
+                          <p>
+                            <br />
+                            <br />Modern day technologies like Artifical
+                            Intelligence(AI) and Machine learning(ML) have
+                            proven to be an indespensable part of new industry
+                            standards as they can help make products and
+                            services smarter and more valuable.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="button-box" align="center">
+                    <a
+                      href="/"
+                      onclick="return false;"
+                      target="_blank"
+                      class="theme-btn btn-style-one"
+                      >Apply now for workshops <br />
+                      <small> opening soon!</small>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+      <div class="tabsection1">
+
+        <div class="tabs">
+          <div class="tab-2">
+            <label for="tab2-1">Main Evenets</label>
+            <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+            <div>
+              <h4>Get Funded</h4>
+                <p>Get Funded is a day-long startup-investor meet in which start-ups and entrepreneurs from different domains pitch their business model in
+                front of Investors Panel to seek funding.</p>
+                
+                <div class="button-box" align="center">
+                  <a href="getfunded.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
+                </div><br><br>
+    
+    
+                <h4>Startup-Expo</h4>
+                  <p>Platform for innovative startups to showcase their product and services and to get in touch with thousands of potential customers and investors.<br /><br><br></p>
+      </p>
+      <div class="expo">
+        <div class="button-box" align="center">
+          <a href="Expo.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
+        </div>
+      </div><br><br>
+    
+    
+                  <h4>Panel Discussion</h4>
+                    <p>An interactive session which observes exchange of knowledge and experiences, giving a panel of experts and audience a chance to discuss a particular topic.<br /><br></p>
+    
+              <br><br>
+              <h4>Lectures</h4>
+               <p>Discover, learn, develop skills that every entrepreneur requires in his journey. A chance to learn from the best experts in the country.<br /><br><br> </p>
+    
+            <br><br>
+            </div>
+          </div>
+    
+    
+    
+    
+          <div class="tab-2">
+            <label for="tab2-2">Competitions</label>
+            <input id="tab2-2" name="tabs-two" type="radio">
+            <div>
+    
+                <h4>Engendea</h4>
+                <p>Engendea is a business model competition in which college students team up and compete with each other and present their business plans to the jury. The most impressive ideas are rewarded.<br><br>
+              </p>	<div class="button-box" align="center">
+                  <a href="Engendea.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
+                </div>
+      <br><br><br>
+    
+                <h4>Crazy ideas</h4>
+                  <p>A brainstorming competition targeting high school students to promote both creative thinking and strategic planning bringing out the hidden entrepreneur in them and help them think how they could implement that in
+                    real life.</p>
+                    <div class="button-box" align="center">
+                      <a href="crazyideas.html" target="_blank" class="theme-btn btn-style-one">Learn More</a>
+                    </div><br><br>
+    
+                    <h4>Biz quiz</h4>
+                      <p>Unleash the nerd inside you and fight out to emerge victoriously and prove your mettle. This is for the financial enthusiasts to enhance their knowledge with a motive of providing Edutainment.<br><br></p>
+    
+          <br><br>
+    
+                    <h4>Social Innovation Challenge</h4>
+                    <p>Ever thought of solving global problems? Here's your chance to contibute feasible solutions to utmost important issues of the society like pollition, traffic, sustainable energy.
+                  </p>
+          <br><br>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+         <div class="tab-3">
+            <label for="tab2-3">Workshops</label>
+            <input id="tab2-3" name="tabs-two" type="radio">
+            <div>
+    
+                        <h4>Stock Market</h4>
+                        <p>Do you want to learn how to make money in the stock market, but do not know where to start? Do you passionately want to become the next 'Warren Buffett'? Learn all about the Art of Stock trading in this
+                        workshop.<br /> </p>
+              <br><br>
+    
+                       <h4>Digital Marketing</h4>
+                       <p>Digital marketing includes all marketing efforts that uses internet. Businesses contest on digital channels such as search engines, social media, mobile apps, email, and their websites to connect with current and
+                        prospective customers.<br /> </p>
+             <br><br>
+    
+                       <h4>Big Data</h4>
+                       <p>Big data analytics helps organizations harness their data and use it to identify new opportunities. That, in turn, leads to smarter business moves, more efficient operations, higher profits, and happier
+                        customers. <br /> </p>
+             <br><br>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <!--End of Event detail area-->
+      <!--Sponsor Section-->
+
+      <!--Gallery Section-->
+      <section class="gallery-section">
+        <div class="container-fluid">
+          <div class="sec-title-two text-center">
+            <h6>GLIMPSES FROM PREVIOUS</h6>
+            <h2>E-Summits</h2>
+          </div>
+          <div class="gallery-container">
+            <div class="row">
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/a.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/b.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/c.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/d.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/e.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/f.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/g.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 col-xl-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                  <div class="image-box thumb-item">
+                    <img
+                      src="images/gallery/h.png"
+                      alt="images"
+                      class="img-responsive thumb-item__image"
+                    />
+                    <div class="overlay-box"></div>
+                    <div class="thumb-item__info">
+                      <h3>Lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Gallery Section-->
+      <!-- Main Footer-->
+      <footer
+        class="main-footer"
+        style="background: url(images/background/DB4.jpg)"
+      >
+        <div class="container" id="Contact">
+          <div class="footer-area text-center">
+            <div class="info-area">
+              <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                  <div class="contact-info-item-one">
+                    <div class="icon-box">
+                      <i class="flaticon-placeholder"></i>
+                    </div>
+                    <div class="text">
+                      <p>IIT Indore <br />Indore</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                  <div class="contact-info-item-one">
+                    <div class="icon-box">
+                      <i class="flaticon-phone-call"></i>
+                    </div>
+                    <div class="text">
+                      <p>Sumer Thakur (Head) <br />+91-9755894865</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                  <div class="contact-info-item-one">
+                    <div class="icon-box">
+                      <i class="flaticon-e-mail-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p>
+                        <a href="mailto:esummit@iiti.ac.in"
+                          >esummit@iiti.ac.in</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="social-links">
+              <li>
+                <a href="https://www.facebook.com/sesciiti/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/sesciiti"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/sesc-iiti/about/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/ecell.iiti/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--End Main Footer-->
+      <!--Footer Bottom Section-->
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="copyright-text text-center">
+            Copyright &copy; <a href="#">ESummit 2020, IIT Indore</a> 2020. All
+            Rights Reserved
+          </div>
+        </div>
+      </section>
+      <!--End Footer Bottom Section-->
+      <!--Scroll to top-->
+      <div class="scroll-to-top scroll-to-target" data-target="html">
+        <span class="fa fa-angle-up"></span>
+      </div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <script src="js/owl.js"></script>
+      <script src="js/wow.js"></script>
+      <script src="js/jquery.countTo.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/appear.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/isotope.js"></script>
+      <script src="js/bxslider.js"></script>
+      <script src="js/validate.js"></script>
+
+      <!-- Custom script -->
+      <script src="js/custom.js"></script>
+    </div>
+  </body>
 </html>
