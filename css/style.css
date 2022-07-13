@@ -5269,3 +5269,29 @@ select:focus {
     padding-bottom: 20px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .mycontainer{
+    height: 50vh;
+  }
+  .mycards{
+    width: 85vw;
+    height: 50vh;
+  }
+  .mycard img{
+    width: 85vw;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mycontainer{
+    height: 62vh;
+  }
+  .mycards{
+    width: 85vw;
+    height: 62vh;
+  }
+  .mycard img{
+    width: 85vw;
+    height: 62vh;
+  }
+}
