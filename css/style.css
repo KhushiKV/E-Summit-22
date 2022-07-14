@@ -2479,7 +2479,9 @@ header {
   position: relative;
   width: 1050px;
   border: 1px solid #ffdadf;
-
+}
+.schedule-section.one{
+  padding-bottom: 60px;
 }
 .schedule-area .table{
   width: 1040px;
