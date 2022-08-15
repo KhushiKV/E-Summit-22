@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
+    number: { value: 100, density: { enable: true, value_area: 800 } },
     color: { value: "#ffffff" },
     shape: {
       type: "edge",
@@ -8,7 +8,7 @@ particlesJS("particles-js", {
       polygon: { nb_sides: 8 },
     },
     opacity: {
-      value: 0.5,
+      value: 0.8,
       random: false,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
