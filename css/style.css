@@ -5428,7 +5428,7 @@ select:focus {
 }
 
 .team-title {
-  color: #d7d7d7;
+  color: #06446C;
 }
 
 .sponsor-row{
@@ -5438,19 +5438,16 @@ select:focus {
   font-size: 1.1rem;
 }
 
-.tiles{
-  height:20rem;
+.tile{
+  height:25rem;
 }
 
-@media (min-width: 1200px){
-  .tiles{
-    height: 30rem;
-  }
-  
-  }}
+.tile img{
+  height: 15rem
+}
 
-@media (min-width: 570px){
-  .tile.primary{
-    height: 22rem;
+@media (max-width: 576px){
+  .tile img{
+    height: 20rem
   }
 }
