@@ -5428,7 +5428,14 @@ select:focus {
 }
 
 .team-title {
-  color: #06446C;
+  color: #DA6C2A;
+  font-weight: 700;
+  word-wrap: normal;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+.phone{
+  padding-top: 2px;
 }
 
 .sponsor-row{
@@ -5439,7 +5446,8 @@ select:focus {
 }
 
 .tile{
-  height:25rem;
+  height:23rem;
+  background-color: #06446C !important;
 }
 
 .tile img{
@@ -5447,7 +5455,31 @@ select:focus {
 }
 
 @media (max-width: 576px){
+  .tile{
+    height: 26rem;
+  }
   .tile img{
     height: 20rem
   }
+}
+
+@media (max-width: 1200px){
+  .tile{
+    height: 24rem;
+  }
+  .tile img{
+    height: 12rem;
+  }
+}
+
+@media (max-width: 768px){
+  .tile{
+    height: 30rem;
+  }
+  .tile img{
+    height: 20rem;
+  }
+  .team-title {
+    font-size: 16px;
+  }  
 }
