@@ -5473,8 +5473,21 @@ select:focus {
   letter-spacing: 2px;
 }
 
+.title-sponsor{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
 @media(max-width: 768px){
   .sponsor-text{
     margin-top: 50px;
   }
+}
+.title-sponsor{
+  max-width: 20rem !important;
 }
